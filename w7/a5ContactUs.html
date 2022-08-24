@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class = "whole">   
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <meta charset="UTF-8">
+   <title>3 Column Layout</title>
+   <link href="./css/a5ContactUs.css" rel="stylesheet">
+
+</head>
+<body>
+   <div class="container">
+    
+		<header>
+       
+       
+            <img src="./media/blaze.png" alt="logo">
+            <h1 style="color: #533E2D ; size: 140px;"> Contact Information</h1>
+        
+      
+      </header>
+   
+      <nav>
+         <ul>
+            <li> <a href="a5Store.html"> Home Page </a> </li>
+            <li> <a href="https://scs.senecac.on.ca/"> ICT </a> </li>
+            <li> <a href="https://www.google.ca/"> Google </a> </li>
+         </ul>
+      </nav>
+      <aside>
+        <h3>About</h3>
+        <p>Headquartered in Shenzhen, Guangdong, Blaze is a Chinese smartphone brand founded by former Oppo vice-president Pete Lau and Carl Pei in December 2013. The company is one of the three subsidiaries of BKK Electronics, the other two being Oppo and Vivo. In one of his statements explaining the company’s philosophy, CEO Pete Lau had said that the brand aimed to design high-end smartphones with flagship hardware that did not cost premium — hence the tagline ‘Never Settle’.</p>
+      </aside>
+      <section class="main">
+        <article>
+			<form id="form1" action="https://httpbin.org/post" method="post">
+				<fieldset>
+				 <legend>Contact Us</legend>
+					 <input type="hidden" name="fullName" value="Paravdeep" /><br>  
+					 <input type="hidden" number="studentno" value="144445202" />  <br>  
+					
+					 Username:<input type='text' name='text1' id="username" onblur="check_username()"/> 
+                <span class="error_span" id="username_span"></span>
+                 <br>  
+
+<br>
+					 <label>Gender: </label>
+            
+            <input type="radio" name="Type" id="Male" value="m" checked> Male
+           
+            <input type="radio" name="Type" id="Female" value="F"> Female
+            
+            <input type="radio" name="Type" id="Other" value="Other"> Prefer not to share
+       <br>     
+			<label for="dur">Age:</label>
+            <input id="dur" type="number" min="0" max="999">
+<br>
+			<label>Province: </label>
+            <select name ="Province" size="1" >
+                <option value = "1" selected> Ontario </option>
+                <option value = "2"> British Columbia </option>
+                <option value = "3"> Alberta </option>
+                <option value = "4"> Manitoba </option>
+            </select>
+			<br>
+					Phone Number: <input name="phone" id="phone" onblur="check_phone()" type="tel">
+               <span class="error_span" id="phone_span"></span>
+					<br>
+					Email: <input name="email" id="em" type="email">
+					<br>
+               Comment: <textarea onblur="check_comment()" name="comment" id="comment"></textarea> <span class="error_span" id="comment_span"></span>
+              
+					<br>
+					<input type="submit" id="submit" name="submit" value="Submit" onclick="allLetter(document.form1.text1)" />
+				</fieldset> 
+        </article>
+        <br><br><br><br><br><br><br>  <br><br><br><br><br><br><br>
+      </section>
+	
+      <footer>
+        <h2>Footer &copy; Web Programming</h2>
+      </footer>
+   </div>
+
+   <script src="./js/a5_valid.js"> </script>
+</body>
+</div> 
+</html>
